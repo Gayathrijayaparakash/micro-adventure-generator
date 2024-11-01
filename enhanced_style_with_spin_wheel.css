@@ -1,0 +1,104 @@
+/* General Body Styling */
+body {
+  background: linear-gradient(120deg, #ff6a00, #ee0979);
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header for Wheel */
+h2.wheel-header {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* Spin Wheel Container */
+.spin-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: rotate(0deg);
+}
+
+/* Spin Wheel Segments */
+.wheel-segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #6a1b9a;
+  border: 3px solid #fff;
+  transform-origin: 100% 100%;
+}
+.wheel-segment:nth-child(1) { background-color: #ff6a00; transform: rotate(0deg); }
+.wheel-segment:nth-child(2) { background-color: #ee0979; transform: rotate(45deg); }
+.wheel-segment:nth-child(3) { background-color: #3f51b5; transform: rotate(90deg); }
+.wheel-segment:nth-child(4) { background-color: #9c27b0; transform: rotate(135deg); }
+.wheel-segment:nth-child(5) { background-color: #2196f3; transform: rotate(180deg); }
+.wheel-segment:nth-child(6) { background-color: #4caf50; transform: rotate(225deg); }
+.wheel-segment:nth-child(7) { background-color: #ffeb3b; transform: rotate(270deg); }
+.wheel-segment:nth-child(8) { background-color: #f44336; transform: rotate(315deg); }
+
+/* Spin Button Styling */
+.spin-button {
+  margin-top: 20px;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+.spin-button:hover {
+  background-color: #9c27b0;
+  transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Spin Result Box */
+.result-box {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #6a1b9a;
+  display: none;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
